@@ -1,7 +1,7 @@
 ##########################################
 # Site Settings
 
-baseURL = "https://example.com/"
+baseURL = "https://cgois.github.io/"
 title = "cgois"
 languageCode = "en"
 hasCJKLanguage = false
