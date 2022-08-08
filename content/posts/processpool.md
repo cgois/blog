@@ -62,7 +62,7 @@ import matplotlib.pyplot as plt
 plt.scatter(xvals, yvals)
 plt.show()
 ```
-![result plot](/tutorial_processpool_plot.png)
+![result plot](/tutorial_processpool_plot.png#center)
 
 This is pretty much all you need to do when parallelizing simple tasks. But for even more fun, you can use `tqdm` to include a progress bar to your executor (you may need to `pip install tqdm`):
 
@@ -72,7 +72,7 @@ from tqdm import tqdm
 with ProcessPoolExecutor(cpu_count()) as executor: # Same as before
   yvals = list(tqdm(executor.map(f, xvals), total=len(xvals))) # Include the progress bar
 ```
-![tqdm progress bar](/tutorial_processpool_tqdm.png)
+![tqdm progress bar](/tutorial_processpool_tqdm.png#center)
 
 The progress bar may actually be useful when you have a huge computation to run and want to check its progress along the way. But do not trust the time estimation, as it'll only be precise when the function applications take the same time for any parameter, which is not always the case. The `total` parameter, telling `tqdm` how many elements we'll be mapping onto, is not mandatory, but without it you'll only get an iteration count, without the pretty progress bar.
 
@@ -99,6 +99,6 @@ ax = fig.add_subplot(111, projection='3d')
 ax.plot_surface(xvals, yvals, np.asarray(zvals))
 plt.show()
 ```
-![paraboloid surface](/tutorial_processpool_surface.png)
+![paraboloid surface](/tutorial_processpool_surface.png#center)
 
 For more usage examples and details on the features, check [the documentation on *concurrent.futures*](https://docs.python.org/3.8/library/concurrent.futures.html#module-concurrent.futures). And if ever *concurrent.futures* is not enough and you need more control over your parallelization tasks, check [the concurrent execution chapter of the documentation](https://docs.python.org/3.8/library/concurrency.html), which describes other useful modules. Keep in mind, though, that because of [Python's GIL](https://realpython.com/python-gil/), using thread-based parallelization is useless for computationally intensive tasks. Always pick process-based paralelization in these cases.

@@ -163,7 +163,7 @@ Before I show you the results, I must make some observations:
 - I do not know if the case would be different for other types of random LPs, and it surely would for other types optimization problems, like SDPs. If you know of some comparison for SDPs please let me know.
 - These were computed with **PICOS 2.0** and **CVXPY 1.1** (around July 2020). Both modules are under very active development, and the results may be very different some time onwards. I'll run it again for the newer versions sometime and update the post.
 
-![gurobi old comparison](/cvxpy_vs_picos_gurobi_old.png)
+![gurobi old comparison](/cvxpy_vs_picos_gurobi_old.png#center)
 
 With these results in mind, I switched to PICOS as of July 2020. Another reason for that was that it had some useful operations that CVXPY didn't have at the time (such as partial tracing). I thoroughly recommend both of them, but I will soon have another peek at the new tools in CVXPY to see how it is going.
 
@@ -171,7 +171,7 @@ With these results in mind, I switched to PICOS as of July 2020. Another reason 
 
 Looks like tables have turned in new versions! The following plot compares **PICOS 2.1.2** with **CVXPY 1.1.10**:
 
-![gurobi new comparison](/cvxpy_vs_picos_gurobi_new.png)
+![gurobi new comparison](/cvxpy_vs_picos_gurobi_new.png#center)
 
 As I observe, CVXPY was around $1.6$ times faster than PICOS for large random LPs (and even faster for small ones). It still doesn't have partial tracing implemented though, which is very useful when dealing with SDPs in quantum information applications.
 
@@ -181,4 +181,4 @@ New versions are around, and some further comparison shows we have a nice race. 
 
 As before, bear in mind that these results are valid for these particular types of sampled instances of LPs (dense constraint matrices etc.), and let me know if you notice any unfairnesses in the comparisons (:
 
-![gurobi new new comparison](/cvxpy_vs_picos_gurobi_new_new.png)
+![gurobi new new comparison](/cvxpy_vs_picos_gurobi_new_new.png#center)
