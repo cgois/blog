@@ -2,6 +2,7 @@
 title: "Steering Review"
 date: 2020-10-15T00:52:44-03:00
 draft: true
+math: true
 ---
 
 # Bob's being paranoid

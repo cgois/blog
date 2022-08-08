@@ -1,7 +1,7 @@
 ---
 title: "CVXPY vs. PICOS: performance comparison for linear programs"
 date: 2021-01-10T13:54:40-03:00
-mathjax: true
+math: true
 draft: false
 summary: CVXPY and PICOS are two frequently used optimization program modelling tools for Python. I compare their performance in modelling simple random linear programs.
 categories: [programming]

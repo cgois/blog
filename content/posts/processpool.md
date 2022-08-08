@@ -1,7 +1,7 @@
 ---
 title: "Parallelizing simple loops in Python"
 date: 2020-09-26T13:54:40-03:00
-mathjax: true
+math: true
 draft: false
 summary: Parallelizing loops with no iteration interdependence using Pythons' concurrent.futures module.
 categories: [programming]

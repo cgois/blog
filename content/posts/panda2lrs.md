@@ -1,7 +1,7 @@
 ---
-title: "*panda2lrs*: user-friendly polytope representation in lrs"
+title: "panda2lrs: user-friendly polytope representation in lrs"
 date: 2020-10-04T02:46:32-03:00
-mathjax: true
+math: true
 draft: false
 summary: An user-friendly way to write *PANDA*-like polytope inequalities and run in *lrs*.
 categories: [tools]

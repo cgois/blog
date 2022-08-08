@@ -1,5 +1,5 @@
 ---
-title: "Book recommendation: Other Minds by Peter Godfrey-Smith"
+title: "\"Other Minds\" by Peter Godfrey-Smith"
 date: 2021-02-20T23:11:21-03:00
 draft: false
 summary: A short review on a layman science book about octopuses and philosophy of mind.
