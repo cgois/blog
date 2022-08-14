@@ -10,6 +10,11 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+disableHLJS: true # to disable highlight.js
+# pygmentsUseClasses: true
+pygmentsCodefences: true
+pygmentsStyle: "pygments"
+
 googleAnalytics: UA-123-45
 
 minify:
@@ -44,7 +49,7 @@ params:
   tocopen: true
 
   assets:
-    disableHLJS: false # to disable highlight.js
+    disableHLJS: true 
     # disableFingerprinting: true
     # favicon: "<link / abs url>"
     # favicon16x16: "<link / abs url>"
@@ -75,17 +80,17 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: "[I'm](/about/) a PhD student [doing some quantum information stuff](https://scholar.google.com/citations?user=gAc5ldUAAAAJ&hl=pt-BR&oi=ao) at [Siegen Universität](https://www.physik.uni-siegen.de/tqo/). I'll post about some things I learn and do in here."
+    Content: "[I'm](/about/) a PhD student [doing some quantum information stuff](https://scholar.google.com/citations?user=gAc5ldUAAAAJ&hl=pt-BR&oi=ao) at [Universität Siegen](https://www.physik.uni-siegen.de/tqo/). I'll post about some things I learn and do in here."
 
   socialIcons:
     # - name: twitter
     #   url: "https://twitter.com/"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=gAc5ldUAAAAJ&hl=pt-BR&oi=ao"
     - name: github
       url: "https://github.com/cgois"
     - name: email
       url: "mailto:carlosbgois@gmail.com"
-    - name: googlescholar
-      url: "https://scholar.google.com/citations?user=gAc5ldUAAAAJ&hl=pt-BR&oi=ao"
 
   analytics:
     google:
@@ -130,7 +135,7 @@ menu:
       url: /about/
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
+
 
 markup:
   asciidocExt:
@@ -170,15 +175,17 @@ markup:
     anchorLineNos: false
     codeFences: true
     guessSyntax: true
-    hl_Lines: ""
-    hl_inline: false
-    lineAnchors: ""
+    # hl_Lines: ""
+    # hl_inline: false
+    # lineAnchors: ""
     lineNoStart: 1
     lineNos: true
-    lineNumbersInTable: true
-    noClasses: true
+    # lineNumbersInTable: true
+    # noClasses: true
+    # noClasses: false
+    pygmentsUseClasses: true 
     noHl: false
-    style: monokai
+    style: monokailight
     tabWidth: 4
   tableOfContents:
     endLevel: 3

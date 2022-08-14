@@ -213,7 +213,7 @@ On the bright side, we can get nice lower bounds for quantum violations in such 
 
 Here is an implementation of this algorithm in Python + PICOS, and the result you get for a modest number of initial settings.
 
-```python
+{{< highlight python >}} 
 import picos as pc
 import numpy as np
 from numpy import kron, eye
@@ -331,7 +331,7 @@ def driver(N_ALPHAS=N_ALPHAS, N_STARTS=N_STARTS):
 if __name__ == "__main__":
     driver()
     plt.show()
-```
+{{< / highlight >}}
 
 To highlight the fact that global optimality is lost, I ran this for a small number of settings, so you can see we only get lower bounds (for this particular case, it is easy to get closer to the actual curve):
 
@@ -374,7 +374,7 @@ If we want to precisely determine $k$, we end up with a *double* hierarchy (on b
 
 The full implementation of this one requires some utility functions (e.g., to project onto the symmetric subspace etc.), but the main routine goes as follows:
 
-```Julia
+{{< highlight julia >}}
 using JuMP, ComplexOptInterface
 
 include("BosonicSymmetry.jl")
@@ -418,6 +418,6 @@ function maximally_mixed_distance(state, local_dim, sn=1, n::Integer=3;
     @show solution_summary(problem, verbose=true)
     problem, Q
 end
-```
+{{< / highlight >}}
 
 You can find the full thing [here](https://github.com/cgois/schmidt_number/blob/main/SchmidtNumber.jl).

@@ -91,3 +91,7 @@ body:not(.dark) #sun {
 .logo-switches {
     flex-wrap: inherit;
 }
+
+.chroma {
+    background-color: unset !important;
+  }
